@@ -12,6 +12,21 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Stop Photos from opening automatically
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+#  Disable animations when opening and closing windows
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
+# Disable animations when opening a Quick Look window.
+defaults write -g QLPanelAnimationDuration -float 0
+
+# Disable animation when opening the Info window in OS X Finder (cmd⌘ + i).
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Disable animations when you open an application from the Dock.
+defaults write com.apple.dock launchanim -bool false
+
+# Make all animations faster that are used by Mission Control.
+defaults write com.apple.dock expose-animation-duration -float 0.1
+
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
