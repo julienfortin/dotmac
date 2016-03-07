@@ -1,5 +1,11 @@
 # dotmac - Quick setup Macbook Pro config
 
+This repository contains several files that I use to get my Macbook pro ready to work whenever I do a clean install.
+I am not the author of most of the content of this repo. I gathered many configuration files that I found online. I didn't keep track of all my sources so I can't mention them I am really sorry.
+In the future I will add any sources that I used for future new commands.
+
+I use this configuration on my Macbook pro early 2013 running Mac OS X 10.11 El Capitan.
+
 ## General UI/UX
 
 ### Increase window resize speed for Cocoa applications
