@@ -8,6 +8,11 @@ I use this configuration on my Macbook pro early 2013 running Mac OS X 10.11 El 
 
 ## General UI/UX
 
+### Stop Photos app from opening automatically
+```bash
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+```
+
 ### Increase window resize speed for Cocoa applications
 ```bash
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
