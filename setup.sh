@@ -48,20 +48,20 @@ brew install watch
 brew install wdiff --with-gettext
 brew install wget
 brew install curl
-brew install bash
 brew install emacs
 brew install gdb
 brew install gpatch
 brew install m4
 brew install make
-
+brew install tree
+brew install most
+brew install zsh
 brew install git
 brew install svn
 brew install less
 brew install openssh
 brew install python
 brew install unzip
-
 brew install valgrind
 brew install gcc
 brew install node
