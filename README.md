@@ -5,12 +5,38 @@ I am not the author of most of the content of this repo. I gathered many configu
 In the future I will add any sources that I used for future new commands.
 
 I use this configuration on my Macbook pro early 2013 running Mac OS X 10.11 El Capitan.
+I suggest you study all the command that i provide to find what fits your needs best.
 
 ## General UI/UX
 
 ### Stop Photos app from opening automatically
 ```bash
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+```
+
+### Disable animations when opening and closing windows
+```bash
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+```
+
+### Disable animations when opening a Quick Look window.
+```bash
+defaults write -g QLPanelAnimationDuration -float 0
+```
+
+### Disable animation when opening the Info window in OS X Finder (cmd⌘ + i).
+```bash
+defaults write com.apple.finder DisableAllAnimations -bool true
+```
+
+### Disable animations when you open an application from the Dock.
+```bash
+defaults write com.apple.dock launchanim -bool false
+```
+
+### Make all animations faster that are used by Mission Control.
+```bash
+defaults write com.apple.dock expose-animation-duration -float 0.1
 ```
 
 ### Increase window resize speed for Cocoa applications
