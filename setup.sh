@@ -69,7 +69,7 @@ brew install rbenv ruby-build rbenv-gem-rehash rbenv-default-gems
 
 # Install new fonts
 brew install cabextract
-mkdir -p /tmp/setup-dev-consolas && cd /tmp/setup-dev-consolas && && curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe && cabextract PowerPointViewer.exe && cabextract ppviewer.cab && open CONSOLA*.TTF 
+mkdir -p /tmp/setup-dev-consolas && cd /tmp/setup-dev-consolas && curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe && cabextract PowerPointViewer.exe && cabextract ppviewer.cab && open CONSOLA*.TTF 
 
 brew install zsh zsh-completions
 echo "fpath=(/usr/local/share/zsh-completions $fpath)" >> ~/.zshrc
