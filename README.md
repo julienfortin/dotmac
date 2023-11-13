@@ -136,7 +136,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 ### Save screenshots to the desktop
 ```bash
-mkdiir "${HOME}/Desktop/Screenshots"
+mkdir "${HOME}/Desktop/Screenshots"
 defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
 ```
 
